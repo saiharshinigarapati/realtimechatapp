@@ -1,0 +1,25 @@
+<h1>Register</h1>
+<form action=""method="POST" enctype="multipart/form-data">
+
+    <input type="text" name="name" placeholder="enter name" reqiured>
+    <br><br>
+    <input type="email" name="email" placeholder="enter email" reqiured>
+    <br><br>
+    <input type="file" name="image" reqiured>
+    <br><br>
+    <input type="text" name="password" placeholder="enter password" reqiured>
+    <br><br>
+    <input type="submit" value="Register">
+
+</form>
+
+
+<%
+if(typeof message !=='undefined'){
+
+%>
+<p style="color:green;"><%= message %></p>
+<%
+
+}
+%>
